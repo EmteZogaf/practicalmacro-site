@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/PracticallyMacroFeature_0.3.4.jar" id="PracticallyMacroFeature" version="0.3.4">
+   <feature url="features/PracticallyMacroFeature_0.4.0.jar" id="PracticallyMacroFeature" version="0.4.0">
       <category name="EditorTools"/>
    </feature>
    <category-def name="EditorTools" label="Editor Tools"/>
