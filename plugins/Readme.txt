@@ -1,4 +1,4 @@
-#Version 0.4.0
+#Version 0.4.2
  
  
 * System Requirements: Eclipse 3.4+, JDK 1.5+.  
@@ -25,6 +25,20 @@ bug/feature report through the 'tracker', but don't expect much.
  
 -----------------------------------------------------------------------------------------------------------
 #Change log
+
+###0.4.2
+
+7/13/2013
+
+####New Features
+
+* None.
+
+####Fixes
+
+* Key bindings didn't work in Eclipse 4+.  This was caused by some changes in Eclipse as part of the
+new architecture.  I believe I have mostly hacked around the problem in a way that works in both Eclipse
+3.x and 4.x, but it's possible I have missed something.  The Eclipse bug: https://bugs.eclipse.org/bugs/show_bug.cgi?id=407749 
 
 ###0.4.0
 
