@@ -1,4 +1,4 @@
-#Version 0.4.2
+#Version 0.4.4
  
  
 * System Requirements: Eclipse 3.4+, JDK 1.5+.  
@@ -25,6 +25,20 @@ bug/feature report through the 'tracker', but don't expect much.
  
 -----------------------------------------------------------------------------------------------------------
 #Change log
+
+###0.4.4
+
+12/28/2013
+
+####New Features
+
+* None.
+
+####Fixes
+
+* http://sourceforge.net/p/practicalmacro/bugs/17/  Bug when used on Eclipse 4.3 and 4.3.1 where certain
+commmon commands (like Copy) don't work correctly because of asynchronous processing of selection 
+changes.  
 
 ###0.4.2
 

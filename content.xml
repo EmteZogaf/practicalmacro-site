@@ -3,44 +3,9 @@
 <repository name='Update Site' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='false'/>
-    <property name='p2.timestamp' value='1373728373823'/>
+    <property name='p2.timestamp' value='1388253558391'/>
   </properties>
-  <units size='22'>
-    <unit id='PracticallyMacro' version='0.4.2'>
-      <update id='PracticallyMacro' range='[0.0.0,0.4.2)' severity='0'/>
-      <properties size='1'>
-        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacro Plug-in'/>
-      </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' version='0.4.2'/>
-        <provided namespace='osgi.bundle' name='PracticallyMacro' version='0.4.2'/>
-        <provided namespace='java.package' name='practicallymacro.commands' version='0.0.0'/>
-        <provided namespace='java.package' name='practicallymacro.util' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='9'>
-        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.expressions' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.model.workbench' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='org.eclipse.e4.core.contexts' range='0.0.0' optional='true' greedy='false'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.2'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-SymbolicName: PracticallyMacro;singleton:=true&#xA;Bundle-Version: 0.4.2
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
+  <units size='29'>
     <unit id='EditorTools' version='1.0.0.0771'>
       <properties size='2'>
         <property name='org.eclipse.equinox.p2.name' value='Editor Tools'/>
@@ -84,6 +49,19 @@
         Copyright Ernest Pasour 2009-2011
       </copyright>
     </unit>
+    <unit id='EditorTools' version='1.0.0.0773'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Editor Tools'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='EditorTools' version='1.0.0.0773'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' range='[0.4.2,0.4.2]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
     <unit id='tooling.source.default' version='1.0.0' singleton='false'>
       <hostRequirements size='1'>
         <required namespace='org.eclipse.equinox.p2.eclipse.type' name='source' range='0.0.0' optional='true' multiple='true' greedy='false'/>
@@ -110,18 +88,53 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='EditorTools' version='1.0.0.0773'>
+    <unit id='EditorTools' version='1.0.0.07777'>
       <properties size='2'>
         <property name='org.eclipse.equinox.p2.name' value='Editor Tools'/>
         <property name='org.eclipse.equinox.p2.type.category' value='true'/>
       </properties>
       <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='EditorTools' version='1.0.0.0773'/>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='EditorTools' version='1.0.0.07777'/>
       </provides>
       <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' range='[0.4.2,0.4.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' range='[0.4.4,0.4.4]'/>
       </requires>
       <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='PracticallyMacro' version='0.4.4'>
+      <update id='PracticallyMacro' range='[0.0.0,0.4.4)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacro Plug-in'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' version='0.4.4'/>
+        <provided namespace='osgi.bundle' name='PracticallyMacro' version='0.4.4'/>
+        <provided namespace='java.package' name='practicallymacro.commands' version='0.0.0'/>
+        <provided namespace='java.package' name='practicallymacro.util' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.expressions' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.model.workbench' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.e4.core.contexts' range='0.0.0' optional='true' greedy='false'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.4'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: PracticallyMacro;singleton:=true&#xA;Bundle-Version: 0.4.4
+          </instruction>
+        </instructions>
+      </touchpointData>
     </unit>
     <unit id='PracticallyMacroFeature.feature.jar' version='0.3.4'>
       <update id='PracticallyMacroFeature.feature.jar' range='[0.0.0,0.3.4)' severity='0'/>
@@ -140,6 +153,391 @@
       </filter>
       <artifacts size='1'>
         <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.3.4'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+          Eclipse Public License
+        </license>
+      </licenses>
+      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+        Copyright Ernest Pasour 2009-2011
+      </copyright>
+    </unit>
+    <unit id='Practicallymacro.BeanShellSupport' version='0.1.6'>
+      <update id='Practicallymacro.BeanShellSupport' range='[0.0.0,0.1.6)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='BeanShellScriptSupport Plug-in for PracticallyMacro'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='Practicallymacro.BeanShellSupport' version='0.1.6'/>
+        <provided namespace='osgi.bundle' name='Practicallymacro.BeanShellSupport' version='0.1.6'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='13'>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='PracticallyMacro' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='3.4.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.4.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt' range='3.4.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='3.4.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='3.4.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.debug.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.debug.ui' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='Practicallymacro.BeanShellSupport' version='0.1.6'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,PracticallyMacro,org.eclipse.jface.text,org.eclipse.ui.console,org.eclipse.ui.editors,org.eclipse.ui.workbench.texteditor;bundle-version=&quot;3.4.0&quot;,org.eclipse.ui.ide;bundle-version=&quot;3.4.0&quot;,org.eclipse.jdt;bundle-version=&quot;3.4.0&quot;,org.eclipse.jdt.core;bundle-version=&quot;3.4.0&quot;,org.eclipse.jdt.ui;bundle-version=&quot;3.4.0&quot;,org.eclipse.debug.core,org.eclipse.debug.ui&#xA;Bundle-Activator: beanshellscriptsupport.Activator&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 0.1.6&#xA;Bundle-SymbolicName: Practicallymacro.BeanShellSupport;singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ClassPath: lib/bsh-2.0b4.jar,.&#xA;Bundle-Name: BeanShellScriptSupport Plug-in for PracticallyMacro
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='tooling.org.eclipse.update.feature.default' version='1.0.0' singleton='false'>
+      <hostRequirements size='1'>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' range='0.0.0' optional='true' multiple='true' greedy='false'/>
+      </hostRequirements>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='tooling.org.eclipse.update.feature.default' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' range='0.0.0' optional='true' multiple='true' greedy='false'/>
+      </requires>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <touchpoint id='null' version='0.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='install'>
+            installFeature(feature:${artifact},featureId:default,featureVersion:default)
+          </instruction>
+          <instruction key='uninstall'>
+            uninstallFeature(feature:${artifact},featureId:default,featureVersion:default)
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='PracticallyMacroFeature.feature.group' version='0.3.4' singleton='false'>
+      <update id='PracticallyMacroFeature.feature.group' range='[0.0.0,0.3.4)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' version='0.3.4'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' range='[0.3.4,0.3.4]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='Practicallymacro.BeanShellSupport' range='[0.1.6,0.1.6]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' range='[0.3.4,0.3.4]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+          Eclipse Public License
+        </license>
+      </licenses>
+      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+        Copyright Ernest Pasour 2009-2011
+      </copyright>
+    </unit>
+    <unit id='EditorTools' version='0.0.0'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Editor Tools'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='EditorTools' version='0.0.0'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' range='[0.3.4,0.3.4]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='EditorTools' version='1.0.0.0775'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Editor Tools'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='EditorTools' version='1.0.0.0775'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' range='[0.4.3,0.4.3]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='PracticallyMacroFeature.feature.jar' version='0.4.1'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' version='0.4.1'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='PracticallyMacroFeature' version='0.4.1'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.1'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+          Eclipse Public License
+        </license>
+      </licenses>
+      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+        Copyright Ernest Pasour 2009-2011
+      </copyright>
+    </unit>
+    <unit id='PracticallyMacroFeature.feature.group' version='0.4.1' singleton='false'>
+      <update id='PracticallyMacroFeature.feature.group' range='[0.0.0,0.4.1)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' version='0.4.1'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' range='[0.4.1,0.4.1]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='Practicallymacro.BeanShellSupport' range='[0.1.6,0.1.6]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' range='[0.4.1,0.4.1]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+          Eclipse Public License
+        </license>
+      </licenses>
+      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+        Copyright Ernest Pasour 2009-2011
+      </copyright>
+    </unit>
+    <unit id='PracticallyMacroFeature.feature.jar' version='0.4.4'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' version='0.4.4'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='PracticallyMacroFeature' version='0.4.4'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.4'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+          Eclipse Public License
+        </license>
+      </licenses>
+      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+        Copyright Ernest Pasour 2009-2011
+      </copyright>
+    </unit>
+    <unit id='PracticallyMacro' version='0.3.4'>
+      <update id='PracticallyMacro' range='[0.0.0,0.3.4)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacro Plug-in'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' version='0.3.4'/>
+        <provided namespace='osgi.bundle' name='PracticallyMacro' version='0.3.4'/>
+        <provided namespace='java.package' name='practicallymacro.commands' version='0.0.0'/>
+        <provided namespace='java.package' name='practicallymacro.util' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.3.4'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.jface.text,org.eclipse.ui.workbench.texteditor,org.eclipse.ui.editors,org.eclipse.ui.console&#xA;Bundle-Activator: practicallymacro.editormacros.Activator&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 0.3.4&#xA;Export-Package: practicallymacro.commands,practicallymacro.util&#xA;Bundle-SymbolicName: PracticallyMacro;singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: PracticallyMacro Plug-in
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='PracticallyMacroFeature.feature.group' version='0.4.4' singleton='false'>
+      <update id='PracticallyMacroFeature.feature.group' range='[0.0.0,0.4.4)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' version='0.4.4'/>
+      </provides>
+      <requires size='3'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' range='[0.4.4,0.4.4]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='Practicallymacro.BeanShellSupport' range='[0.1.6,0.1.6]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' range='[0.4.4,0.4.4]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+          Eclipse Public License
+        </license>
+      </licenses>
+      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+        Copyright Ernest Pasour 2009-2011
+      </copyright>
+    </unit>
+    <unit id='PracticallyMacroFeature.feature.jar' version='0.4.0'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' version='0.4.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='PracticallyMacroFeature' version='0.4.0'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+          Eclipse Public License
+        </license>
+      </licenses>
+      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+        Copyright Ernest Pasour 2009-2011
+      </copyright>
+    </unit>
+    <unit id='PracticallyMacro' version='0.4.2'>
+      <update id='PracticallyMacro' range='[0.0.0,0.4.2)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacro Plug-in'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' version='0.4.2'/>
+        <provided namespace='osgi.bundle' name='PracticallyMacro' version='0.4.2'/>
+        <provided namespace='java.package' name='practicallymacro.commands' version='0.0.0'/>
+        <provided namespace='java.package' name='practicallymacro.util' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.expressions' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.e4.ui.model.workbench' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.e4.core.contexts' range='0.0.0' optional='true' greedy='false'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: PracticallyMacro;singleton:=true&#xA;Bundle-Version: 0.4.2
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='PracticallyMacroFeature.feature.jar' version='0.4.3'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' version='0.4.3'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='PracticallyMacroFeature' version='0.4.3'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.3'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
@@ -220,72 +618,6 @@
         </instructions>
       </touchpointData>
     </unit>
-    <unit id='Practicallymacro.BeanShellSupport' version='0.1.6'>
-      <update id='Practicallymacro.BeanShellSupport' range='[0.0.0,0.1.6)' severity='0'/>
-      <properties size='1'>
-        <property name='org.eclipse.equinox.p2.name' value='BeanShellScriptSupport Plug-in for PracticallyMacro'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='Practicallymacro.BeanShellSupport' version='0.1.6'/>
-        <provided namespace='osgi.bundle' name='Practicallymacro.BeanShellSupport' version='0.1.6'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
-      </provides>
-      <requires size='13'>
-        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='PracticallyMacro' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='3.4.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.4.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.jdt' range='3.4.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='3.4.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='3.4.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.debug.core' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.debug.ui' range='0.0.0'/>
-      </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='Practicallymacro.BeanShellSupport' version='0.1.6'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,PracticallyMacro,org.eclipse.jface.text,org.eclipse.ui.console,org.eclipse.ui.editors,org.eclipse.ui.workbench.texteditor;bundle-version=&quot;3.4.0&quot;,org.eclipse.ui.ide;bundle-version=&quot;3.4.0&quot;,org.eclipse.jdt;bundle-version=&quot;3.4.0&quot;,org.eclipse.jdt.core;bundle-version=&quot;3.4.0&quot;,org.eclipse.jdt.ui;bundle-version=&quot;3.4.0&quot;,org.eclipse.debug.core,org.eclipse.debug.ui&#xA;Bundle-Activator: beanshellscriptsupport.Activator&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 0.1.6&#xA;Bundle-SymbolicName: Practicallymacro.BeanShellSupport;singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ClassPath: lib/bsh-2.0b4.jar,.&#xA;Bundle-Name: BeanShellScriptSupport Plug-in for PracticallyMacro
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
-    <unit id='tooling.org.eclipse.update.feature.default' version='1.0.0' singleton='false'>
-      <hostRequirements size='1'>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' range='0.0.0' optional='true' multiple='true' greedy='false'/>
-      </hostRequirements>
-      <properties size='1'>
-        <property name='org.eclipse.equinox.p2.type.fragment' value='true'/>
-      </properties>
-      <provides size='2'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='tooling.org.eclipse.update.feature.default' version='1.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.flavor' name='tooling' version='1.0.0'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' range='0.0.0' optional='true' multiple='true' greedy='false'/>
-      </requires>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <touchpoint id='null' version='0.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='2'>
-          <instruction key='install'>
-            installFeature(feature:${artifact},featureId:default,featureVersion:default)
-          </instruction>
-          <instruction key='uninstall'>
-            uninstallFeature(feature:${artifact},featureId:default,featureVersion:default)
-          </instruction>
-        </instructions>
-      </touchpointData>
-    </unit>
     <unit id='PracticallyMacro' version='0.4.1'>
       <update id='PracticallyMacro' range='[0.0.0,0.4.1)' severity='0'/>
       <properties size='1'>
@@ -320,49 +652,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='PracticallyMacroFeature.feature.group' version='0.3.4' singleton='false'>
-      <update id='PracticallyMacroFeature.feature.group' range='[0.0.0,0.3.4)' severity='0'/>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' version='0.3.4'/>
-      </provides>
-      <requires size='3'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' range='[0.3.4,0.3.4]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='Practicallymacro.BeanShellSupport' range='[0.1.6,0.1.6]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' range='[0.3.4,0.3.4]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
-          Eclipse Public License
-        </license>
-      </licenses>
-      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
-        Copyright Ernest Pasour 2009-2011
-      </copyright>
-    </unit>
-    <unit id='EditorTools' version='0.0.0'>
-      <properties size='2'>
-        <property name='org.eclipse.equinox.p2.name' value='Editor Tools'/>
-        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='EditorTools' version='0.0.0'/>
-      </provides>
-      <requires size='1'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' range='[0.3.4,0.3.4]'/>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
     </unit>
     <unit id='a.jre' version='1.6.0' singleton='false'>
       <provides size='117'>
@@ -486,70 +775,6 @@
       </provides>
       <touchpoint id='org.eclipse.equinox.p2.native' version='1.0.0'/>
     </unit>
-    <unit id='PracticallyMacroFeature.feature.jar' version='0.4.1'>
-      <properties size='3'>
-        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' version='0.4.1'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='PracticallyMacroFeature' version='0.4.1'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.1'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
-          Eclipse Public License
-        </license>
-      </licenses>
-      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
-        Copyright Ernest Pasour 2009-2011
-      </copyright>
-    </unit>
-    <unit id='PracticallyMacroFeature.feature.group' version='0.4.1' singleton='false'>
-      <update id='PracticallyMacroFeature.feature.group' range='[0.0.0,0.4.1)' severity='0'/>
-      <properties size='4'>
-        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
-        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
-      </properties>
-      <provides size='1'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' version='0.4.1'/>
-      </provides>
-      <requires size='3'>
-        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' range='[0.4.1,0.4.1]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='Practicallymacro.BeanShellSupport' range='[0.1.6,0.1.6]'/>
-        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' range='[0.4.1,0.4.1]'>
-          <filter>
-            (org.eclipse.update.install.features=true)
-          </filter>
-        </required>
-      </requires>
-      <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
-          Eclipse Public License
-        </license>
-      </licenses>
-      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
-        Copyright Ernest Pasour 2009-2011
-      </copyright>
-    </unit>
     <unit id='PracticallyMacroFeature.feature.jar' version='0.4.2'>
       <properties size='3'>
         <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
@@ -584,37 +809,35 @@
         Copyright Ernest Pasour 2009-2011
       </copyright>
     </unit>
-    <unit id='PracticallyMacro' version='0.3.4'>
-      <update id='PracticallyMacro' range='[0.0.0,0.3.4)' severity='0'/>
-      <properties size='1'>
-        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacro Plug-in'/>
+    <unit id='PracticallyMacroFeature.feature.group' version='0.4.3' singleton='false'>
+      <update id='PracticallyMacroFeature.feature.group' range='[0.0.0,0.4.3)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
+        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
       </properties>
-      <provides size='5'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' version='0.3.4'/>
-        <provided namespace='osgi.bundle' name='PracticallyMacro' version='0.3.4'/>
-        <provided namespace='java.package' name='practicallymacro.commands' version='0.0.0'/>
-        <provided namespace='java.package' name='practicallymacro.util' version='0.0.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.group' version='0.4.3'/>
       </provides>
-      <requires size='6'>
-        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+      <requires size='3'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacro' range='[0.4.2,0.4.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='Practicallymacro.BeanShellSupport' range='[0.1.6,0.1.6]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' range='[0.4.3,0.4.3]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
       </requires>
-      <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.3.4'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='manifest'>
-            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.5&#xA;Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.jface.text,org.eclipse.ui.workbench.texteditor,org.eclipse.ui.editors,org.eclipse.ui.console&#xA;Bundle-Activator: practicallymacro.editormacros.Activator&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 0.3.4&#xA;Export-Package: practicallymacro.commands,practicallymacro.util&#xA;Bundle-SymbolicName: PracticallyMacro;singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: PracticallyMacro Plug-in
-          </instruction>
-        </instructions>
-      </touchpointData>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+          Eclipse Public License
+        </license>
+      </licenses>
+      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
+        Copyright Ernest Pasour 2009-2011
+      </copyright>
     </unit>
     <unit id='PracticallyMacro' version='0.4.0'>
       <update id='PracticallyMacro' range='[0.0.0,0.4.0)' severity='0'/>
@@ -670,40 +893,6 @@
           </instruction>
         </instructions>
       </touchpointData>
-    </unit>
-    <unit id='PracticallyMacroFeature.feature.jar' version='0.4.0'>
-      <properties size='3'>
-        <property name='org.eclipse.equinox.p2.name' value='PracticallyMacroFeature Feature'/>
-        <property name='org.eclipse.equinox.p2.description' value='This is an Eclipse editor macro tool for Eclipse 3.4 or later.  This is a bit of a hack, but I&apos;ve attempted to play in the Eclipse command structure.  Create/Export/Save/Play commands.'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='https://sourceforge.net/projects/practicalmacro/'/>
-      </properties>
-      <provides size='3'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='PracticallyMacroFeature.feature.jar' version='0.4.0'/>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-        <provided namespace='org.eclipse.update.feature' name='PracticallyMacroFeature' version='0.4.0'/>
-      </provides>
-      <filter>
-        (org.eclipse.update.install.features=true)
-      </filter>
-      <artifacts size='1'>
-        <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.0'/>
-      </artifacts>
-      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
-      <touchpointData size='1'>
-        <instructions size='1'>
-          <instruction key='zipped'>
-            true
-          </instruction>
-        </instructions>
-      </touchpointData>
-      <licenses size='1'>
-        <license uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
-          Eclipse Public License
-        </license>
-      </licenses>
-      <copyright uri='https://sourceforge.net/projects/practicalmacro/' url='https://sourceforge.net/projects/practicalmacro/'>
-        Copyright Ernest Pasour 2009-2011
-      </copyright>
     </unit>
     <unit id='EditorTools' version='0.0.0.20121110070216'>
       <properties size='2'>
