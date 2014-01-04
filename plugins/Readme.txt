@@ -1,4 +1,4 @@
-#Version 0.4.4
+#Version 0.4.5
  
  
 * System Requirements: Eclipse 3.4+, JDK 1.5+.  
@@ -26,6 +26,19 @@ bug/feature report through the 'tracker', but don't expect much.
 -----------------------------------------------------------------------------------------------------------
 #Change log
 
+###0.4.5
+
+1/4/2014
+
+####New Features
+
+* None.
+
+####Fixes
+
+* https://sourceforge.net/p/practicalmacro/bugs/8/  Shift+UpArrow, Shift+DownArrow and Ctrl+Backspace 
+didn't work.  Had to add those into my manual key handling.
+  
 ###0.4.4
 
 12/28/2013
