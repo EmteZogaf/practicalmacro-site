@@ -1,4 +1,4 @@
-#Version 0.4.5
+#Version 0.4.6
  
  
 * System Requirements: Eclipse 3.4+, JDK 1.5+.  
@@ -19,13 +19,25 @@ Eclipse dropins
 directory (Eclipse 3.4+) and restart Eclipse.  Enough people have had problems with this with Eclipse 3.4+ that I recommend only using the update site.
  
 * Bugs: Undoubtedly.  I have not touched this project for some time and I hope it is helpful to people.  However,
-changes to Eclipse may break this plugin, and I don't have a lot of time to support it.  If you find something, feel free ot create a 
+changes to Eclipse may break this plugin, and I don't have a lot of time to support it.  If you find something, feel free to create a 
 bug/feature report through the 'tracker', but don't expect much.
 
  
 -----------------------------------------------------------------------------------------------------------
 #Change log
 
+###0.4.6
+
+6/16/2014
+
+####New Features
+
+* None.
+
+####Fixes
+
+* http://sourceforge.net/p/practicalmacro/bugs/19/ -- code folding caused problems with find/replace
+  
 ###0.4.5
 
 1/4/2014
