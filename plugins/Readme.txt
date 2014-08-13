@@ -1,4 +1,4 @@
-#Version 0.4.6
+#Version 0.4.8
  
  
 * System Requirements: Eclipse 3.4+, JDK 1.5+.  
@@ -26,6 +26,19 @@ bug/feature report through the 'tracker', but don't expect much.
 -----------------------------------------------------------------------------------------------------------
 #Change log
 
+###0.4.8
+
+8/13/2014
+
+####New Features
+
+* Added a second mark
+* Show mark positions during macro debug
+
+####Fixes
+
+* Changed mark to not move if the inserted text is at the mark position.  This seems like a more natural behavior that matches selection semantics.
+  
 ###0.4.6
 
 6/16/2014
