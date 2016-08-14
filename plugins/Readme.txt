@@ -1,11 +1,11 @@
-#Version 0.4.8
+#Version 0.4.9
  
  
 * System Requirements: Eclipse 3.4+, JDK 1.5+.  
  
 * Install (several ways to install) 
  
-* Add a remote update site through Help->Software Updates:
+* <this is apparently gone> Add a remote update site through Help->Software Updates:
 http://puremvcnotificationviewer.googlecode.com/svn/trunk/PracticallyMacroGoogleUpdateSite.  The 
 exact instructions differ depending on which version of Eclipse you are using.
 You should be able to turn on Eclipse auto updates and 
@@ -25,6 +25,15 @@ bug/feature report through the 'tracker', but don't expect much.
  
 -----------------------------------------------------------------------------------------------------------
 #Change log
+
+###0.4.9
+
+8/14/2016
+
+####New Features
+
+* Changed max number of times you can repeat a command in "Play command" to 10000 (apparently was 100)
+* Make Play command dialog remember checkboxes as a preference.
 
 ###0.4.8
 

@@ -3,14 +3,45 @@
 <repository name='Update Site' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='false'/>
-    <property name='p2.timestamp' value='1407964566614'/>
+    <property name='p2.timestamp' value='1471217923279'/>
   </properties>
   <mappings size='3'>
     <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
     <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
-  <artifacts size='20'>
+  <artifacts size='22'>
+    <artifact classifier='osgi.bundle' id='Practicallymacro.BeanShellSupport' version='0.1.6'>
+      <properties size='3'>
+        <property name='artifact.size' value='297620'/>
+        <property name='download.size' value='297620'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.3.4'>
+      <properties size='2'>
+        <property name='artifact.size' value='840'/>
+        <property name='download.size' value='840'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.2'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='199444'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.0'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='196752'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.1'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='199214'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.5'>
       <properties size='2'>
         <property name='artifact.size' value='4096'/>
@@ -35,29 +66,22 @@
         <property name='download.size' value='203388'/>
       </properties>
     </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.2'>
-      <properties size='2'>
-        <property name='download.contentType' value='application/zip'/>
-        <property name='download.size' value='549'/>
-      </properties>
-    </artifact>
-    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.2'>
+    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.6'>
       <properties size='2'>
         <property name='artifact.size' value='4096'/>
-        <property name='download.size' value='199444'/>
+        <property name='download.size' value='200772'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.9'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='204298'/>
       </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.4'>
       <properties size='2'>
         <property name='download.contentType' value='application/zip'/>
         <property name='download.size' value='549'/>
-      </properties>
-    </artifact>
-    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.3.4'>
-      <properties size='3'>
-        <property name='artifact.size' value='193331'/>
-        <property name='download.size' value='193331'/>
-        <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.7'>
@@ -72,41 +96,10 @@
         <property name='download.size' value='548'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.0'>
-      <properties size='2'>
-        <property name='artifact.size' value='4096'/>
-        <property name='download.size' value='196752'/>
-      </properties>
-    </artifact>
     <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.5'>
       <properties size='2'>
         <property name='download.contentType' value='application/zip'/>
         <property name='download.size' value='550'/>
-      </properties>
-    </artifact>
-    <artifact classifier='osgi.bundle' id='Practicallymacro.BeanShellSupport' version='0.1.6'>
-      <properties size='3'>
-        <property name='artifact.size' value='297620'/>
-        <property name='download.size' value='297620'/>
-        <property name='download.contentType' value='application/zip'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.0'>
-      <properties size='2'>
-        <property name='download.contentType' value='application/zip'/>
-        <property name='download.size' value='549'/>
-      </properties>
-    </artifact>
-    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.6'>
-      <properties size='2'>
-        <property name='artifact.size' value='4096'/>
-        <property name='download.size' value='200772'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.3.4'>
-      <properties size='2'>
-        <property name='artifact.size' value='840'/>
-        <property name='download.size' value='840'/>
       </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.3'>
@@ -115,13 +108,13 @@
         <property name='download.size' value='551'/>
       </properties>
     </artifact>
-    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.4.1'>
+    <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.2'>
       <properties size='2'>
-        <property name='artifact.size' value='4096'/>
-        <property name='download.size' value='199214'/>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.size' value='549'/>
       </properties>
     </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.8'>
+    <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.0'>
       <properties size='2'>
         <property name='download.contentType' value='application/zip'/>
         <property name='download.size' value='549'/>
@@ -131,6 +124,25 @@
       <properties size='2'>
         <property name='download.contentType' value='application/zip'/>
         <property name='download.size' value='549'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.8'>
+      <properties size='2'>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.size' value='549'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='PracticallyMacroFeature' version='0.4.9'>
+      <properties size='2'>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.size' value='549'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='PracticallyMacro' version='0.3.4'>
+      <properties size='3'>
+        <property name='artifact.size' value='193331'/>
+        <property name='download.size' value='193331'/>
+        <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
   </artifacts>
