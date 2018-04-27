@@ -6,7 +6,7 @@
 * Install (several ways to install) 
  
 * <this is apparently gone> Add a remote update site through Help->Software Updates:
-http://puremvcnotificationviewer.googlecode.com/svn/trunk/PracticallyMacroGoogleUpdateSite.  The 
+https://github.com/EmteZogaf/practicalmacro-site/raw/master.  The 
 exact instructions differ depending on which version of Eclipse you are using.
 You should be able to turn on Eclipse auto updates and 
 be notified when a new version is published (if ever).  You may have to set up proxy 
