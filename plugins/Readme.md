@@ -1,4 +1,4 @@
-#Version 0.4.9
+# Version 0.4.9
  
  
 * System Requirements: Eclipse 3.4+, JDK 1.5+.  
@@ -24,102 +24,102 @@ bug/feature report through the 'tracker', but don't expect much.
 
  
 -----------------------------------------------------------------------------------------------------------
-#Change log
+# Change log
 
-###0.4.9
+### 0.4.9
 
 8/14/2016
 
-####New Features
+#### New Features
 
 * Changed max number of times you can repeat a command in "Play command" to 10000 (apparently was 100)
 * Make Play command dialog remember checkboxes as a preference.
 
-###0.4.8
+### 0.4.8
 
 8/13/2014
 
-####New Features
+#### New Features
 
 * Added a second mark
 * Show mark positions during macro debug
 
-####Fixes
+#### Fixes
 
 * Changed mark to not move if the inserted text is at the mark position.  This seems like a more natural behavior that matches selection semantics.
   
-###0.4.6
+### 0.4.6
 
 6/16/2014
 
-####New Features
+#### New Features
 
 * None.
 
-####Fixes
+#### Fixes
 
 * http://sourceforge.net/p/practicalmacro/bugs/19/ -- code folding caused problems with find/replace
   
-###0.4.5
+### 0.4.5
 
 1/4/2014
 
-####New Features
+#### New Features
 
 * None.
 
-####Fixes
+#### Fixes
 
 * https://sourceforge.net/p/practicalmacro/bugs/8/  Shift+UpArrow, Shift+DownArrow and Ctrl+Backspace 
 didn't work.  Had to add those into my manual key handling.
   
-###0.4.4
+### 0.4.4
 
 12/28/2013
 
-####New Features
+#### New Features
 
 * None.
 
-####Fixes
+#### Fixes
 
 * http://sourceforge.net/p/practicalmacro/bugs/17/  Bug when used on Eclipse 4.3 and 4.3.1 where certain
 commmon commands (like Copy) don't work correctly because of asynchronous processing of selection 
 changes.  
 
-###0.4.2
+### 0.4.2
 
 7/13/2013
 
-####New Features
+#### New Features
 
 * None.
 
-####Fixes
+#### Fixes
 
 * Key bindings didn't work in Eclipse 4+.  This was caused by some changes in Eclipse as part of the
 new architecture.  I believe I have mostly hacked around the problem in a way that works in both Eclipse
 3.x and 4.x, but it's possible I have missed something.  The Eclipse bug: https://bugs.eclipse.org/bugs/show_bug.cgi?id=407749 
 
-###0.4.0
+### 0.4.0
 
 11/10/2012
-####New Features
+#### New Features
 
 * None.
 
-####Fixes
+#### Fixes
 
 * Find dialog while recording macro should now work in Eclipse 4.2 (Juno) 
 
-###0.3.4
+### 0.3.4
 
 9/1/2011
-####New Features
+#### New Features
 
 * None.
 
-####Fixes
+#### Fixes
 
 * Defined macros should now be runnable via Ctrl+3 
 
